@@ -3301,7 +3301,7 @@ Copyright (c) 2015 Daniel Eden
 {
   padding:25px;
   background-color:black;
-  border-radius:40px;
+  /*border-radius:40px;*/
   color:white;
   text-align:center;
 }
@@ -3309,10 +3309,10 @@ Copyright (c) 2015 Daniel Eden
 /* button */
 .button{
  /*position:fixed;*/
- top:50vh;
- margin-top:-78px;
- left:50vw;
- margin-left:-78px;
+ /*top:50vh;*/
+ /*margin-top:-78px;*/
+ /*left:50vw;*/
+ /*margin-left:-78px;*/
  display:inline-block;
  text-align:center;
  background-color:darkgray;
@@ -3338,9 +3338,9 @@ Copyright (c) 2015 Daniel Eden
 .popup{
   position:fixed;
   left:50vw;
-  margin-left:35px;
+  /*margin-left:35px;*/
   top:50vh;
-  margin-top:-210px;
+  /*margin-top:-210px;*/
   opacity:0;
   transition:all 1s;
   -webkit-transition:all 1s;
@@ -3357,10 +3357,18 @@ Copyright (c) 2015 Daniel Eden
 
 }
 
+/* Different positions */
 .button:hover ~.pos1
 {
-  margin-left:-50px;
-  margin-top:-20px;
+  margin-left:-20px;
+  margin-top:0px;
   opacity:1;
-  text-align: center;
+}
+
+.button:hover ~.pos2
+{
+  margin-left:-190px;
+  margin-top:25px;
+  opacity:1;
+  
 }
