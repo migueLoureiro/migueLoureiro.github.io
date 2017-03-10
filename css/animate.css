@@ -3291,14 +3291,12 @@ Copyright (c) 2015 Daniel Eden
 }
 
 
-.popup div
-{
+.popup div{
   /*width:120px;*/
   font-size:20px;
 }
 
-.popup div
-{
+.popup div{
   padding:25px;
   background-color:black;
   /*border-radius:40px;*/
@@ -3318,6 +3316,7 @@ Copyright (c) 2015 Daniel Eden
  background-color:darkgray;
  color: aliceblue;
  padding:30px;
+ align-self: center;
   
  font-size:30px;
  
@@ -3333,42 +3332,48 @@ Copyright (c) 2015 Daniel Eden
 }
 /* Gestion des évenements */
 
-
-
 .popup{
   position:fixed;
   left:50vw;
-  /*margin-left:35px;*/
   top:50vh;
-  /*margin-top:-210px;*/
   opacity:0;
   transition:all 1s;
   -webkit-transition:all 1s;
+  min-width: 250px;
 }
 
-.popup div
-{
+.popup div{
   padding:25px;
   background-color:black;
   border-radius:40px;
   color:white;
   text-align:center;
   font-size:20px;
-
 }
-
 /* Different positions */
-.button:hover ~.pos1
-{
-  margin-left:-20px;
+.button:hover ~.pos1{
+  margin-left:-300px;
+  margin-top:-100px;
+  opacity:1;
+}
+.button:hover ~.pos2{
+  margin-left:-300px;
+  margin-top:0px;
+  opacity:1;
+}
+.button:hover ~.pos3{
+  margin-left:0px;
+  margin-top:-100px;
+  opacity:1;
+}
+.button:hover ~.pos4{
+  margin-left:0px;
   margin-top:0px;
   opacity:1;
 }
 
-.button:hover ~.pos2
-{
-  margin-left:-190px;
-  margin-top:25px;
-  opacity:1;
-  
+#devcycle{
+  /*overflow: scroll;*/
+  overflow: hidden;
+  /*align-items: center;*/
 }
