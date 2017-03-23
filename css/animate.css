@@ -3377,3 +3377,15 @@ Copyright (c) 2015 Daniel Eden
   overflow: hidden;
   /*align-items: center;*/
 }
+
+/* BEGIN JGL */
+/*------------------------------------------------------------------
+    [Center]
+------------------------------------------------------------------*/
+.center{
+    text-align: center;
+}
+
+#lsts-others-text{
+    font-size: 18px;
+}
